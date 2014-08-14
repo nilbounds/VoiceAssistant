@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_chat"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="95.0dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/voice_input"
+            android:layout_width="wrap_content"
+            android:layout_height="85.0dip"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/siri_button" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottombar"
+        android:layout_weight="1"
+        android:divider="#ffc6c6c6"
+        android:scrollingCache="false" />
+
+</RelativeLayout>
